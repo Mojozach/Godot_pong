@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dsqwi1y7ut04l"]
+
+[ext_resource type="Script" uid="uid://dfcacvyf2331l" path="res://main.gd" id="1_ig7tw"]
+[ext_resource type="AudioStream" uid="uid://dl5oyfahr8kcq" path="res://audio/background_music.mp3" id="2_h2yge"]
+[ext_resource type="AudioStream" uid="uid://dcy24i11erdfc" path="res://audio/sound_effect.mp3" id="3_1bvp3"]
+
+[node name="Main" type="Node2D" unique_id=1952513800]
+script = ExtResource("1_ig7tw")
+
+[node name="MusicPlayer" type="AudioStreamPlayer" parent="." unique_id=1520913252]
+stream = ExtResource("2_h2yge")
+autoplay = true
+parameters/looping = true
+
+[node name="HitPlayer" type="AudioStreamPlayer" parent="." unique_id=1402322403]
+stream = ExtResource("3_1bvp3")
